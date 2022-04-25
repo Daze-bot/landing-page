@@ -9,20 +9,19 @@ body {
 .header,
 .section-one,
 .section-two,
-.section-three,
 .section-four,
 .footer {
-  padding: 6px 150px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   background-color: #1f2937;
-}
-
-.left-links {
-  font-size: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  flex-shrink: 0;
 }
 
 .right-links {
@@ -38,6 +37,7 @@ a {
 .left-links a {
   color: #f9faf8;
   font-weight: 550;
+  font-size: 24px;
 }
 
 .right-links a,
@@ -46,6 +46,130 @@ a {
   font-size: 18px;
 }
 
+.section-one {
+  display: flex;
+  align-items: center;
+  background-color: #1f2937;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.part-one {
+  flex: 1;
+  padding-right: 64px;
+}
+
+.one-head {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 800;
+}
+
+.one-button {
+  background-color: #3882f6;
+  color: white;
+  border: 0;
+  padding: 4px 20px;
+}
+
+.part-two {
+  flex: 1;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  color: white;
+  background-color: rgb(105, 108, 114);
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.section-two {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 64px;
+}
+
+.two-head {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1f2937;
+  padding: 36px;
+}
+
+.container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 100px;
+  font-size: 18px;
+}
+
+.two-img {
+  border-style: solid;
+  border-color: #3882f6;
+  padding: 16px;
+  flex: 1;
+  height: 80px;
+}
+
+.section-three {
+  background-color: #e5e7eb;
+  padding: 64px 300px;
+}
+
+.quote {
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+}
+
+.author {
+  text-align: end;
+  font-weight: 800;
+}
+
+.inside-four {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3882f6;
+  padding: 32px 64px;
+  align-items: center;
+  color: white;
+}
+
+.text-head {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.four-button {
+  background-color: #3882f6;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  padding: 4px 20px;
+}
+
+.footer {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 p {
   margin: 0;
+}
+
+button,
+.inside-four {
+  border-radius: 5px;
+}
+
+.two-img {
+  border-radius: 15px;
 }
